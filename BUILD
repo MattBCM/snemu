@@ -1,5 +1,5 @@
 java_binary(
     name = "snemu",
-    srcs = glob(["src/*.java"]),
-    main_class = "Snemu"
+    srcs = glob(["src/com/stoozy/snemu/*.java"]),
+    main_class = "com.stoozy.snemu.Main"
 )

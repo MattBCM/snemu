@@ -1,7 +1,9 @@
+package com.stoozy.snemu;
+
 import java.awt.*;
 import javax.swing.JFrame;
 
-public class Snemu {
+public class Main {
     private static int w = 500;
     private static int h = 480;
 
