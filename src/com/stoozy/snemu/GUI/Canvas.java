@@ -1,4 +1,4 @@
-package com.stoozy.snemu;
+package com.stoozy.snemu.GUI;
 
 import java.awt.*;
 import java.awt.Graphics;
@@ -26,8 +26,8 @@ public class Canvas extends JComponent {
 
     public void fillFramebuffer(Color c) {
         int color = c.getRGB();
-        for (int x = 0; x < framebuffer.getWidth(); x++) {
-            for (int y = 0; y < framebuffer.getHeight(); y++) {
+        for (int x = 0; x < width; x++) {
+            for (int y = 0; y < height; y++) {
                 framebuffer.setRGB(x, y, color);
             }
         }
