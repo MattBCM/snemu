@@ -1,16 +1,17 @@
 package com.stoozy.snemu.system;
 
 public enum AddressModes {
-    ABS,
-    ABSX,
-    ABSY,
+    A,
     IMM,
     IMP,
-    IND,
-    XIND,
-    INDY,
+    ZP0,
+    ZPX,
+    ZPY,
+    ABY,
+    ABS,
+    ABX,
+    IZY,
+    IZX,
     REL,
-    ZPG,
-    ZPGX,
-    ZPGY
+    IND
 }

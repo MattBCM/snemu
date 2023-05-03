@@ -1,5 +1,7 @@
 package com.stoozy.snemu.GUI;
 
+import java.awt.Graphics;
+
 import javax.swing.JFrame;
 import javax.swing.UIManager;
 
@@ -7,6 +9,8 @@ public class Gui {
 
     private static int width;
     private static int height;
+
+    Canvas canvas;
 
     public Gui(int w, int h) {
         try {
@@ -21,7 +25,7 @@ public class Gui {
 
     public void display() {
         JFrame frame = new JFrame();
-        Canvas canvas = new Canvas(width, height);
+        canvas = new Canvas(width, height);
         Menu menu = new Menu();
 
         frame.setSize(width, height);
@@ -32,5 +36,9 @@ public class Gui {
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
+    public Graphics getGraphics() {
+        return canvas.framebuffer.getGraphics();
     }
 }

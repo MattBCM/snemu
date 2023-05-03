@@ -5,9 +5,16 @@ interface FunctionPointer {
 }
 
 public class Instruction {
-    byte opcode;
     String symbol;
     FunctionPointer operate;
-    FunctionPointer addrMode;
+    AddressModes addrMode;
     byte cycles;
+
+    public Instruction(String sym, FunctionPointer op, AddressModes addrMode, byte cycles) {
+        this.symbol = sym;
+        this.operate = op;
+        this.addrMode = addrMode;
+        this.cycles = cycles;
+    }
+
 }

@@ -9,7 +9,7 @@ import java.awt.image.BufferedImage;
 public class Canvas extends JComponent {
     private int width;
     private int height;
-    private BufferedImage framebuffer;
+    public BufferedImage framebuffer;
 
     public Canvas(int w, int h) {
         width = w;
